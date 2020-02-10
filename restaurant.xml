@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<restaurant menu="lunch">
+        <menuadult id="001">
+            <primerplate>  
+                <plate type="1">Cream Calabazin</plate>
+                <plate type="2">Borraja al Natural</plate>
+                <plate type="3">Huevos al Manchester</plate>
+                <plate type="4">Pimientos Asados</plate>
+                <plate type="5">Ensalada Templada de sepia y langostino</plate>
+            </primerplate>
+            <secondplate>
+                <plate type="1">Arroz con pasas y anacardos</plate>
+                <plate type="2">Menestra de verduras salteadas en wok</plate>
+                <plate type="3">Coliflor boloñesa gratinada con bechamel</plate>
+                <plate type="4">Alubias con almejas</plate>
+                <plate type="5">Ensalada con caballa</plate>
+            </secondplate>
+            <dessert>
+                <dessert type="1">Postre de Queso</dessert>
+                <dessert type="2">Flan de huevo</dessert>
+                <dessert type="3">Coulant de chocolate</dessert>
+                <dessert type="4">Brownie de nueces</dessert>
+                <dessert type="5">Crema de chocolate y mascarpone</dessert>
+            </dessert>
+        </menuadult>
+        <menuchildish id="002">
+            <primerplate>
+                <plate type="1">Arroz con pasas y anacardos</plate>
+                <plate type="2">Menestra de verduras salteadas en wok</plate>
+                <plate type="3">Coliflor boloñesa gratinada con bechamel</plate>
+                <plate type="4">Alubias con almejas</plate>
+                <plate type="5">Ensalada con caballa</plate>
+            </primerplate>
+            <secondplate>
+                <firstplate>
+                </firstplate>
+                <secondplate>
+                </secondplate>
+                <thirdplate>
+                    
+                </thirdplate>
+                <fourplate>
+                    
+                </fourplate>
+                <fiveplate>
+                    
+                </fiveplate>
+            </secondplate>
+            <dessert>
+                <firstdessert>
+
+                </firstdessert>
+                <seconddesser>
+                    
+                </seconddesser>
+                <thirddesser>
+                    
+                </thirddesser>
+                <fourdessert>
+                    
+                </fourdessert>
+                <fivedessert>
+                    
+                </fivedessert>
+                
+            </dessert>
+        </menuchildish>
+</restaurant>

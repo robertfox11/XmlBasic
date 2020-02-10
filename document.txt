@@ -1,0 +1,93 @@
+Xml 
+es un dato basado en texto para que la maquina y la persona pueda leer facilmente
+Se deriva de SGML
+standar  generalized Markup lenguaje 
+Nos sirve para describir la caracteristicas que tiene determinado un documento 
+No es un lenguaje de programacion 
+se utiliza tags para guardar y organizar los datos 
+Es extensible podemos crear nuestros propios tags  
+nuestros propios lenguaje
+es un standar public
+Markup
+Son nuestros marcadores  define la reglas para codificar un documento
+El formato que usa puede leer tantos las maquinas como los humanos
+Son simbolos que dan informacion la cual se adiciona el documento y mejora el significado
+identifica las partes
+indica como las partes se relaciona
+tags
+se coloca entre simbolos <> se necesitara un cierre </>
+
+SIntaxis
+    Declaracion
+    puede o no puede ir es opcional  se recomienda debe ser el primer elemento
+    Es sensible a mayuscula y minuscula
+    empieza con xml y luego la version  Encoding especifica el tipo de codificacion por los caracteres
+
+    Tags
+    Es un elemento de estructura
+    Se conoce como nodo de xml o elementos 
+    El nombre se coloca entre <>
+    Es sensible en mayuscula y minuscula 
+    Debe tener apertura y cierre  si no hay contenido se llama tag vacio
+    En caso de simple se coloca de la siguiente forma  <miElement/>
+
+    Elemento de Raiz 
+    Solamente se tiene un elemento de raiz
+    Es el nivel mas alto
+    los demas elemento se anidan a el 
+    Podemos pensar en el documento xml como un arbol
+
+    Atributo
+    Especifca una propiedad que tiene el elemento 
+    Se usa como par nombre/Valor
+    se puede tener mas de un atributo 
+    es sensible a mayuscual y minuscula
+    El nombre de atributo se coloca normal y el valor va entre comillas
+
+Referencia
+Adiciona Texto o informacion en el documento 
+Siempre empiezan con & y termina con ;
+Existen dos tipos de renferencia de entidades
+    contiene un nombre entre el inicioy el final 
+    &amp
+Referencia de caracteres 
+    contiene un # seguido de un numero 
+    el numero es un codigo Unicode para el caracter
+    &#65
+
+Texto
+los espeacio, tabulaciones y saltos de lineas entre atributos se ignoran
+Algunos caracteres son reservados para la SIntaxis y no se pueden usar directamente por lo que hay que usar un reemplazo 
+Estos caracteres se conocen como entidades de caracteres predefinidas
+< &lt;
+> &gt;
+& &amp;
+' &apos;
+" &quot;
+
+Entidades numericas de caracteres
+Usamos este codigo
+Decimal  Hexadecimal;
+< &#60;  &#x3C;  
+> &#63;  &#x3E;
+' &#39;  &#x26;
+& &#38;  &#x27;
+" &#34;  &#x22;
+
+Espacios significativo 
+Si el espacio forma parte del texto 
+insignificativo
+se ignora los espacio es insignificativo
+
+documento Xml
+tiene dos partes 
+    documento prolog
+        Siempre va ir la parte de arriba del documento 
+        Va antes del elemento raiz
+        Contiene la declaracion xml 
+    documento element
+        Esta por una jerarquia
+        cada seccion tiene un proposito especificativo
+        las seccion se crean con elementos que a su vez pueden contener otros elementos
+
+Declaracion 
