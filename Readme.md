@@ -13,7 +13,7 @@ Pull requests son bienvenidas. Para sugerencias y cambios mayores por favor cont
 Por favor, relizar los test que consideren necesarios. 
 
 ## About the project
-https://github.com/rafaelvenegasd/xml
+https://github.com/robertfox11/XmlBasic.git
 
 ## The genius behind this
-https://github.com/rafaelvenegasd
+https://github.com/robertfox11
