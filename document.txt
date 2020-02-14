@@ -17,7 +17,7 @@ indica como las partes se relaciona
 tags
 se coloca entre simbolos <> se necesitara un cierre </>
 
-SIntaxis
+Sintaxis
     Declaracion
     puede o no puede ir es opcional  se recomienda debe ser el primer elemento
     Es sensible a mayuscula y minuscula
@@ -90,4 +90,70 @@ tiene dos partes
         cada seccion tiene un proposito especificativo
         las seccion se crean con elementos que a su vez pueden contener otros elementos
 
-Declaracion 
+TIPOS Atributo
+Cadena
+Tokenized
+    id identificar de forma unica del elemento 
+    idref Referencia de un id
+    IdrefS Referencia de todos los id de los elementos
+    Entity el atributo representa una entidad externa en el documento
+    Entities El atributo representa entidades externas en el documentos
+    NMTOKEN tiene restricciones sobre el dato puede ser parte del atributo
+
+Enumerados valores predefinidos en su declaracion
+    NotationType, va estar Referenciado a una anotacion declarado  en el documento
+    Enumeracion, define una lista de valores que el atributo puede tener 
+
+Commentario se colacan de esta manera
+<!-- Second Plate-->
+
+CDATA es caracter data
+Se toma como texto directo y el parser ignora <> & lo que se encuentre dentro no se considera adentro de un Markup
+Podemos usarlos para colocar las entidades de caracter directamente 
+<![CDATA[
+    Texto
+]]>
+No se permite anidamientos
+
+Instrucciones de procesado PI
+permite que el documento tenga Instrucciones para las aplicaciones
+no forma parte de los datos del documento
+Puede contener cualquier dato menos ?>
+Son pasos a la aplicaciones
+<?target instruction?>
+    target -  identifica la aplicacion a cual se da la instruction
+    instruction - la informacion que procesa a la aplicaciones
+
+<?xml-stylesheet href="miestilos.css" type="text/css"?>
+indica que se dirige al browser 
+href y type  son las instructiones
+
+Validation 
+La Validation se lleva a cabo de dos formas 
+Well-formed XML documento bien formado
+valid XML documento -documento valido 
+
+Bien formado
+Si no se usa DTD debe usarse correctamente  &, <,>,', "
+En el anidamientos el tag interno debe cerrarse antes del tag externo 
+todos los tag debe tener un cierre
+Tiene que tener un elemento raiz
+VAlidado
+Si esta bien formado y tiene un DTD decimos que es valido 
+
+DTD
+document type Declaration
+Verifica el vocabulario 
+Verifica la validez de la estructura con las reglas de un lenguaje XML en particular
+Puede especificar el documento en otro documento
+El los externos usamos 
+<!DOCTYPE curso System "curso.dtd">
+Iniciamos 
+<!DOCTYPE
+Element - Nos sireve para decirle al parser a partir de cual elemento es la raiz para el parse
+DTD identifier es el path de un archivo URL
+[] Ahi se colocan las declaracion que se conocen como subconjunto  internos 
+<!DOCTYPE element "identifier">
+
+XSD
+Se usan para describir
